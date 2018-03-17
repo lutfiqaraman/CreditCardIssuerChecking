@@ -10,6 +10,13 @@ namespace CreditCardChecking
     {
         static void Main(string[] args)
         {
+            long a1 = 4111111111111111;
+
+            GetIssuer GIA1 = new GetIssuer(a1);
+            GIA1.CheckIssuer();
+
+            Console.WriteLine("Type of card : {0}", GIA1.CheckIssuer());
+            Console.ReadKey();
         }
     }
 }
